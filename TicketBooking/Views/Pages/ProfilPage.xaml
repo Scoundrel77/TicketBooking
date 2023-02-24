@@ -1,0 +1,22 @@
+﻿<Page x:Class="TicketBooking.Views.Pages.ProfilPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TicketBooking.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="250" d:DesignWidth="250"
+      Title="ProfilPage">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Профиль:" FontSize="18" FontWeight="Light"/>
+            <TextBlock Text="{Binding Name, StringFormat=Имя: {0}}" FontSize="18" FontWeight="Light"/>
+            <TextBlock Text="{Binding Surname, StringFormat=Фамилия: {0}}" FontSize="18" FontWeight="Light"/>
+            <TextBlock Text="{Binding Patronymic, StringFormat=Отчество: {0}}" FontSize="18" FontWeight="Light"/>
+            <TextBlock Text="{Binding Email, StringFormat=Email: {0}}" FontSize="18" FontWeight="Light"/>
+            <TextBlock Text="{Binding Password, StringFormat=Пароль: {0}}" FontSize="18" FontWeight="Light"/>
+            <TextBlock Text="{Binding NumberPhone, StringFormat=Телефон: {0}}" FontSize="18" FontWeight="Light"/>
+        </StackPanel>        
+    </Grid>
+</Page>
